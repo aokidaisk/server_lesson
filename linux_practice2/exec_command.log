@@ -1,0 +1,97 @@
+    1  sudo yum update
+    2  exit
+    3  vagrant ssh -config
+    4  sudo yum -y groupinstall "development tools"
+    5  sudo yum -y install epel-release wget
+    6  sudo wget http://rpms.famillecollet.com/enterprise/remi-relese-7.rpm
+    7* 
+    8  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    9  sudo rpm -Uvh remi-release-7.rpm
+   10  sudo yum -y install --enablerepo=remi-php72 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+   11  php -v
+   12  http://rpms.famillecollet.com/enterprise
+   13  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   14  php composer-setup.php
+   15  php -r "unlink('composer-setup.php');"
+   16  sudo mv composer.phar /usr/local/bin/composer
+   17  composer -v
+   18  ls/
+   19  ls /
+   20  ls /usr
+   21  pwd
+   22  cd /vagrant
+   23  pwd
+   24  cd usr
+   25  cd /usr
+   26  pwd
+   27  cd /vagrant
+   28  mldir server_lesson && cd server_lesson
+   29  mkdir server_lesson && cd server_lesson
+   30  git init
+   31  touch first.txt
+   32  cd /vagrant
+   33  mkdir server_lesson/linux_practice/public
+   34  cd /vagrant
+   35  mkdir -p server_lesson/linux_practice/public
+   36  ls server_lesson server_lesson/linux_practice
+   37  cd /vagrant
+   38  touch server_lesson/linux_practice/public/index.php
+   39  ls server_lesson/linux_practice/public
+   40  cd /vagrant/server_lesson && ls
+   41  cd /vagrant/server_lesson/linux_practice/public
+   42  cp index.php index_bk.php
+   43  ls
+   44  cd /vagrant/server_lesson/linux_practice
+   45  cp -r public tmp
+   46  ls ./ public tmp
+   47  cd /vagrant
+   48  mv server_lesson/linux_practice server_lesson/linux_practice1
+   49  mkdir linux_practice2 linux_practice3
+   50  mv ./linux_practice2 ./server_lesson
+   51  cd /vagrant/server_lesson/linux_practice1/tmp/
+   52  rm *_bk.php
+   53  cd /vagrant
+   54  rm server_lesson/first.txt
+   55  rm -r linux_practice3
+   56  ls server_lesson
+   57  cd /vagrant/server_lesson
+   58  echo '# サーバレッスン' > README.md
+   59  echo 'Linuxプラクティス' >> README.md
+   60  echo '-----------------' >> README.md
+   61  cat README.md
+   62  cd /vagrant/server_lesson
+   63  vi README.md
+   64  cat README.md
+   65  git status
+   66  git add .
+   67  git status
+   68  git commit -m 'README.md上にLinuxコマンドを記述'
+   69  git status
+   70  git remote add origin https://github.com/aokidaisk/server_lesson.git
+   71  git remote -v
+   72  git push origin master
+   73  cd /server_lesson/linux_practice2
+   74  cd /vagrant /server_lesson/linux_practice2
+   75  ls
+   76  cd /server_lesson/linux_practice2
+   77  ls
+   78  cd /server_lesson
+   79  cd /vagrant/server_lesson/linux_practice2
+   80  mkdir documents && cd documents
+   81  touch gizumo{1..50}.md
+   82  cd ./
+   83  cd ../
+   84  mkdir trash
+   85  ls
+   86  mv ./documents/gizumo{20..40}.md ./trash
+   87  cd trash
+   88  ls
+   89  cd ../
+   90  touch .gitignore
+   91  ls
+   92  ls -a
+   93  vi .gitignore
+   94  history 300
+   95  echo history 300 > exec_command.log
+   96  cat exec_command.log
+   97  history 300 > exec_command.log
